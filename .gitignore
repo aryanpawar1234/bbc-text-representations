@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints
+.vscode/
+.DS_Store
+data/bbc-text.csv
+data/master.csv
+data/*.txt
+data/glove.*
+cache/
+*.pkl
+models/
+*.model
+*.log
