@@ -1,0 +1,110 @@
+{
+  "roll": "SE22UARI195",
+  "dev_fold": 2,
+  "test_fold": 4,
+  "health": {
+    "ohe": {
+      "V": 2000,
+      "nnz": 134064,
+      "sparsity": 0.9498,
+      "oov": 0.2863,
+      "topk_100": 0.0,
+      "topk_500": 0.0,
+      "fit_s": 0.224,
+      "ms_per_doc": 0.124,
+      "mem_mb": 1.539
+    },
+    "bow": {
+      "V": 11515,
+      "nnz": 186739,
+      "sparsity": 0.9879,
+      "oov": 0.0706,
+      "topk_100": 0.1195,
+      "topk_500": 0.3344,
+      "fit_s": 0.221,
+      "ms_per_doc": 0.173,
+      "mem_mb": 2.142
+    },
+    "ngram": {
+      "V": 18625,
+      "nnz": 230909,
+      "sparsity": 0.9907,
+      "oov": 0.0935,
+      "topk_100": 0.0,
+      "topk_500": 0.0,
+      "fit_s": 0.724,
+      "ms_per_doc": 0.374,
+      "mem_mb": 2.648
+    },
+    "tfidf": {
+      "V": 11515,
+      "nnz": 186739,
+      "sparsity": 0.9879,
+      "oov": 0.0706,
+      "topk_100": 0.1195,
+      "topk_500": 0.3344,
+      "fit_s": 0.2,
+      "ms_per_doc": 0.141,
+      "mem_mb": 2.142
+    },
+    "w2v_ns": {
+      "tokens_per_sec": 45760.0
+    },
+    "w2v_hs": {
+      "tokens_per_sec": 44775.0
+    },
+    "glove": {}
+  },
+  "classification": {
+    "ohe": {
+      "macro_f1": 0.9654,
+      "accuracy": 0.9663
+    },
+    "bow": {
+      "macro_f1": 0.9683,
+      "accuracy": 0.9685
+    },
+    "ngram": {
+      "macro_f1": 0.9639,
+      "accuracy": 0.964
+    },
+    "tfidf": {
+      "macro_f1": 0.9639,
+      "accuracy": 0.964
+    },
+    "w2v_ns_tfidf": {
+      "macro_f1": 0.9306,
+      "accuracy": 0.9326
+    },
+    "w2v_hs_tfidf": {
+      "macro_f1": 0.9327,
+      "accuracy": 0.9348
+    },
+    "glove_tfidf": {
+      "macro_f1": 0.9267,
+      "accuracy": 0.9281
+    }
+  },
+  "retrieval": {
+    "tfidf": {
+      "map@5": 0.6993333333333334,
+      "recall@10": 0.07098262032085562,
+      "neg_top1": 1.0
+    },
+    "w2v_ns_tfidf": {
+      "map@5": 0.8324999999999999,
+      "recall@10": 0.09109004965622615,
+      "neg_top1": 1.0
+    },
+    "w2v_hs_tfidf": {
+      "map@5": 0.8401666666666667,
+      "recall@10": 0.09161000763941943,
+      "neg_top1": 1.0
+    },
+    "glove_tfidf": {
+      "map@5": 0.8673333333333334,
+      "recall@10": 0.09432502546473134,
+      "neg_top1": 1.0
+    }
+  }
+}
